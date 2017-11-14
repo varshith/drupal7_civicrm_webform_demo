@@ -1,0 +1,13 @@
+name = CiviCRM Entity Price Set Field
+description = "Provides CiviCRM Entity Price Set Field Type.  Provides a widget for manipulating price sets for CiviCRM Events."
+dependencies[] = civicrm_entity_profile
+package = CiviCRM Entity
+core = 7.x
+version = 1.0-alpha2
+
+; Information added by Drupal.org packaging script on 2017-09-30
+version = "7.x-2.0-beta10"
+core = "7.x"
+project = "civicrm_entity"
+datestamp = "1506813552"
+

@@ -1,0 +1,4 @@
+name = Craft Central
+description = Helper functions for Craft Central.
+core = 7.x
+package = "Craft Central"

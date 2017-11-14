@@ -1,0 +1,12 @@
+name = CiviCase Activity Reference Field
+description = "Provides CiviCRM entity reference field type. A "remote" entity reference field for accessing CiviCase Activities from the host CiviCRM Case entity type. "
+dependencies[] = civicrm_entity_inline
+package = CiviCRM Entity
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2017-09-30
+version = "7.x-2.0-beta10"
+core = "7.x"
+project = "civicrm_entity"
+datestamp = "1506813552"
+

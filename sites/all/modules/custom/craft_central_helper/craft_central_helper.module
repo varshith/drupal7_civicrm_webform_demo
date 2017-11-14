@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function craft_central_helper_ctools_plugin_directory($module, $plugin) {
+    if ($module == 'ctools' && !empty($plugin)) {
+        return "plugins/$plugin";
+    }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function craft_central_helper_form_alter(&$form, &$form_state, $form_id)
+{
+    if (strpos($form_id, "webform_client_form_") === 0) {
+        if(isset($form['#node']->webform_civicrm['nid']))
+            $form['#submit'][] = 'redirect_on_profile_submit';
+    }
+}
+
+function redirect_on_profile_submit(&$form, &$form_state) {
+    $form_state['redirect'] = 'profile';
+}
