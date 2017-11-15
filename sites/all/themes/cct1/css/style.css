@@ -1,3 +1,13 @@
 /**
  * Place your custom styles here.
  */
+.view-display-id-design_makers_block {
+    text-align: center;
+}
+.view-display-id-design_makers_block .views-row {
+    padding: 20px;
+    text-transform: uppercase;
+}
+.view-display-id-design_makers_block .views-row .views-field-organization-name {
+    font-weight: bold;
+}
